@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -13,7 +14,7 @@ namespace BackEnd.Models
         public int Id { get; set; }
 
         [Required]
-        [Column(TypeName = "varchar(100)")]
+        [Column(TypeName ="varchar(100)")]
         public string Titular { get; set; }
 
         [Required]
@@ -26,6 +27,6 @@ namespace BackEnd.Models
 
         [Required]
         [Column(TypeName = "varchar(3)")]
-        public string CW { get; set; }
+        public string CVV { get; set; }
     }
 }
